@@ -1,0 +1,159 @@
+.container {
+
+    display: grid;
+    background-color: aquamarine;
+    width: 100%;
+    height: 600px;
+    gap: 1rem;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: 80px 1fr 1fr 100px;
+    text-align: center;
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .header {
+
+        max-width: 400px;
+    }
+
+    .main {
+
+        max-width: 700px;
+    }
+
+    .sidebar {
+
+        display: none
+    }
+    
+    .footer {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+    }
+
+    .section1 {
+
+        grid-column: 1/2;
+        grid-row: 1/2;
+
+    }
+
+     .section2 {
+
+        grid-column: 2/4;
+        grid-row: 1/2;
+
+    }
+
+     .section3 {
+
+        grid-column: 1/2;
+        grid-row: 2/3;
+
+    }
+
+     .section2 {
+
+        grid-column: 2/4;
+        grid-row: 2/3;
+
+    }
+
+
+
+}
+
+.header {
+
+    grid-row: 1/2;
+    grid-column: 1/5;
+    background-color: peru;
+
+}
+
+.main {
+
+     display: grid;
+     grid-column: 1/3;
+     grid-row: 2/4;;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 2fr 1fr 1fr;
+     background-color: blanchedalmond;
+     
+}
+
+.main1 {
+
+    grid-row: 2/3;
+    grid-column: 1/2;
+    background-color: greenyellow;
+}
+
+.main2 {
+
+    grid-row: 2/3;
+    grid-column: 2/3;
+    background-color: greenyellow;
+}
+
+.main3 {
+
+    grid-row: 3/4;
+    grid-column: 1/3;
+    background-color: greenyellow;
+}
+
+.sidebar {
+
+    grid-column: 3/5;
+    grid-row: 2/4;
+    background-color: olive;
+}
+
+.footer {
+
+    display: grid;
+    grid-column: 1/5;
+    grid-row: 4/5;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: brown;
+
+}
+
+.section1 {
+
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: royalblue;
+
+}
+
+.section2 {
+
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: royalblue;
+    
+}
+
+.section3 {
+
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-color: royalblue;
+    
+}
+
+.section4 {
+
+    grid-column: 4/5;
+    grid-row: 1/2;
+    background-color: royalblue;
+    
+}
